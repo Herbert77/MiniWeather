@@ -11,6 +11,8 @@
 #import "HHMenuItem.h"
 #import "UIColor+FlatColors.h"
 
+#import "AppDelegate.h"
+
 @interface HHBaseViewController ()
 
 @end
@@ -67,12 +69,14 @@
     
     self.navigationItem.titleView = [UIView new];
     
-    NSLog(@"self's class name: %@", NSStringFromClass([self class]));
-    
     self.view.backgroundColor = self.menuItem.colorScheme;
     
     // 把汉堡菜单按钮添加到子视图上
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    [appDelegate.window addSubview:_buttonHamburger];
+
     [self.view addSubview:_buttonHamburger];
+    
 }
 
 - (void)didReceiveMemoryWarning {

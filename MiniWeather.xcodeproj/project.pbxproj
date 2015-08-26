@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E5262FE01B8C08D200C68934 /* LBHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */; };
+		E5B8B43F1B8D63F8008BA5D8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B43E1B8D63F8008BA5D8 /* HomeViewController.m */; };
+		E5B8B4481B8D6765008BA5D8 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B4461B8D6765008BA5D8 /* HomeCell.m */; };
+		E5B8B4491B8D6765008BA5D8 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B8B4471B8D6765008BA5D8 /* HomeCell.xib */; };
+		E5B8B44D1B8DAC35008BA5D8 /* HHHomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B44C1B8DAC35008BA5D8 /* HHHomeItem.m */; };
+		E5B8B4571B8DB282008BA5D8 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B4551B8DB282008BA5D8 /* ProfileViewController.m */; };
+		E5B8B4581B8DB282008BA5D8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B8B4561B8DB282008BA5D8 /* ProfileViewController.xib */; };
 		E5DE21B91B8B072B00D05C26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21B81B8B072B00D05C26 /* main.m */; };
 		E5DE21BC1B8B072B00D05C26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */; };
 		E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21C31B8B072B00D05C26 /* Images.xcassets */; };
@@ -40,6 +46,16 @@
 		E5262FDE1B8C08D200C68934 /* LBHamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBHamburgerButton.h; sourceTree = "<group>"; };
 		E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBHamburgerButton.m; sourceTree = "<group>"; };
 		E5262FE41B8C16BF00C68934 /* MiniWeather_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniWeather_Prefix.pch; sourceTree = "<group>"; };
+		E5B8B43D1B8D63F8008BA5D8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E5B8B43E1B8D63F8008BA5D8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E5B8B4451B8D6765008BA5D8 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		E5B8B4461B8D6765008BA5D8 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		E5B8B4471B8D6765008BA5D8 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		E5B8B44B1B8DAC35008BA5D8 /* HHHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHHomeItem.h; sourceTree = "<group>"; };
+		E5B8B44C1B8DAC35008BA5D8 /* HHHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHomeItem.m; sourceTree = "<group>"; };
+		E5B8B4541B8DB282008BA5D8 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		E5B8B4551B8DB282008BA5D8 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		E5B8B4561B8DB282008BA5D8 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		E5DE21B31B8B072B00D05C26 /* MiniWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DE21B71B8B072B00D05C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5DE21B81B8B072B00D05C26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +108,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5B8B43C1B8D63B3008BA5D8 /* TempVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21FF1B8B0E6500D05C26 /* PoliticsViewController.h */,
+				E5DE22001B8B0E6500D05C26 /* PoliticsViewController.m */,
+				E5DE22011B8B0E6500D05C26 /* TravelViewController.h */,
+				E5DE22021B8B0E6500D05C26 /* TravelViewController.m */,
+				E5DE22031B8B0E6500D05C26 /* CultureViewController.h */,
+				E5DE22041B8B0E6500D05C26 /* CultureViewController.m */,
+				E5DE22051B8B0E6500D05C26 /* NatureViewController.h */,
+				E5DE22061B8B0E6500D05C26 /* NatureViewController.m */,
+			);
+			name = TempVC;
+			sourceTree = "<group>";
+		};
+		E5B8B4401B8D643A008BA5D8 /* BaseController （基类控制器） */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21F91B8B0CE900D05C26 /* HHBaseViewController.h */,
+				E5DE21FA1B8B0CE900D05C26 /* HHBaseViewController.m */,
+			);
+			name = "BaseController （基类控制器）";
+			sourceTree = "<group>";
+		};
+		E5B8B4411B8D6472008BA5D8 /* BaseClass （基类） */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8B4401B8D643A008BA5D8 /* BaseController （基类控制器） */,
+			);
+			name = "BaseClass （基类）";
+			sourceTree = "<group>";
+		};
+		E5B8B4421B8D6570008BA5D8 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8B4451B8D6765008BA5D8 /* HomeCell.h */,
+				E5B8B4461B8D6765008BA5D8 /* HomeCell.m */,
+				E5B8B4471B8D6765008BA5D8 /* HomeCell.xib */,
+			);
+			name = HomeCell;
+			sourceTree = "<group>";
+		};
+		E5B8B4431B8D6594008BA5D8 /* HHMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21EC1B8B0AB600D05C26 /* HHMenuItem.h */,
+				E5DE21ED1B8B0AB600D05C26 /* HHMenuItem.m */,
+			);
+			name = HHMenuItem;
+			sourceTree = "<group>";
+		};
+		E5B8B4441B8D65A3008BA5D8 /* HHHomeItem */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8B44B1B8DAC35008BA5D8 /* HHHomeItem.h */,
+				E5B8B44C1B8DAC35008BA5D8 /* HHHomeItem.m */,
+			);
+			name = HHHomeItem;
+			sourceTree = "<group>";
+		};
+		E5B8B44E1B8DB09B008BA5D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8B4541B8DB282008BA5D8 /* ProfileViewController.h */,
+				E5B8B4551B8DB282008BA5D8 /* ProfileViewController.m */,
+				E5B8B4561B8DB282008BA5D8 /* ProfileViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		E5DE21AA1B8B072B00D05C26 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +256,7 @@
 		E5DE21DE1B8B07AE00D05C26 /* Menu_HomePage（菜单与主页） */ = {
 			isa = PBXGroup;
 			children = (
+				E5B8B43C1B8D63B3008BA5D8 /* TempVC */,
 				E5DE21E71B8B099B00D05C26 /* Controller */,
 				E5DE21E61B8B099900D05C26 /* View */,
 				E5DE21E51B8B099300D05C26 /* Model */,
@@ -194,6 +281,7 @@
 		E5DE21E11B8B087700D05C26 /* AboutMe （个人简介） */ = {
 			isa = PBXGroup;
 			children = (
+				E5B8B44E1B8DB09B008BA5D8 /* Controller */,
 			);
 			name = "AboutMe （个人简介）";
 			sourceTree = "<group>";
@@ -208,6 +296,7 @@
 		E5DE21E31B8B08BE00D05C26 /* Functions （功能） */ = {
 			isa = PBXGroup;
 			children = (
+				E5B8B4411B8D6472008BA5D8 /* BaseClass （基类） */,
 				E5DE21E21B8B089B00D05C26 /* Location （定位） */,
 				E5DE21E11B8B087700D05C26 /* AboutMe （个人简介） */,
 				E5DE21E01B8B086C00D05C26 /* Settings （设置） */,
@@ -232,8 +321,8 @@
 		E5DE21E51B8B099300D05C26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE21EC1B8B0AB600D05C26 /* HHMenuItem.h */,
-				E5DE21ED1B8B0AB600D05C26 /* HHMenuItem.m */,
+				E5B8B4441B8D65A3008BA5D8 /* HHHomeItem */,
+				E5B8B4431B8D6594008BA5D8 /* HHMenuItem */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -241,6 +330,7 @@
 		E5DE21E61B8B099900D05C26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E5B8B4421B8D6570008BA5D8 /* HomeCell */,
 				E5DE21F51B8B0B1C00D05C26 /* Menu */,
 				E5DE21EF1B8B0AE400D05C26 /* MenuCell */,
 			);
@@ -250,18 +340,10 @@
 		E5DE21E71B8B099B00D05C26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE21FF1B8B0E6500D05C26 /* PoliticsViewController.h */,
-				E5DE22001B8B0E6500D05C26 /* PoliticsViewController.m */,
-				E5DE22011B8B0E6500D05C26 /* TravelViewController.h */,
-				E5DE22021B8B0E6500D05C26 /* TravelViewController.m */,
-				E5DE22031B8B0E6500D05C26 /* CultureViewController.h */,
-				E5DE22041B8B0E6500D05C26 /* CultureViewController.m */,
-				E5DE22051B8B0E6500D05C26 /* NatureViewController.h */,
-				E5DE22061B8B0E6500D05C26 /* NatureViewController.m */,
-				E5DE21F91B8B0CE900D05C26 /* HHBaseViewController.h */,
-				E5DE21FA1B8B0CE900D05C26 /* HHBaseViewController.m */,
 				E5DE21FC1B8B0D9C00D05C26 /* HHNavigationController.h */,
 				E5DE21FD1B8B0D9C00D05C26 /* HHNavigationController.m */,
+				E5B8B43D1B8D63F8008BA5D8 /* HomeViewController.h */,
+				E5B8B43E1B8D63F8008BA5D8 /* HomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -367,6 +449,8 @@
 			files = (
 				E5DE21F41B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib in Resources */,
 				E5DE21C71B8B072B00D05C26 /* LaunchScreen.xib in Resources */,
+				E5B8B4491B8D6765008BA5D8 /* HomeCell.xib in Resources */,
+				E5B8B4581B8DB282008BA5D8 /* ProfileViewController.xib in Resources */,
 				E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,14 +474,18 @@
 				E5DE21B91B8B072B00D05C26 /* main.m in Sources */,
 				E5DE21EA1B8B09D200D05C26 /* UIColor+FlatColors.m in Sources */,
 				E5DE220A1B8B0E6500D05C26 /* NatureViewController.m in Sources */,
+				E5B8B43F1B8D63F8008BA5D8 /* HomeViewController.m in Sources */,
 				E5DE21EE1B8B0AB600D05C26 /* HHMenuItem.m in Sources */,
 				E5DE22081B8B0E6500D05C26 /* TravelViewController.m in Sources */,
 				E5DE21F81B8B0B5300D05C26 /* HHMenu.m in Sources */,
+				E5B8B4571B8DB282008BA5D8 /* ProfileViewController.m in Sources */,
 				E5DE22091B8B0E6500D05C26 /* CultureViewController.m in Sources */,
 				E5DE22071B8B0E6500D05C26 /* PoliticsViewController.m in Sources */,
 				E5DE21FB1B8B0CE900D05C26 /* HHBaseViewController.m in Sources */,
+				E5B8B4481B8D6765008BA5D8 /* HomeCell.m in Sources */,
 				E5DE21F31B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m in Sources */,
 				E5DE21FE1B8B0D9C00D05C26 /* HHNavigationController.m in Sources */,
+				E5B8B44D1B8DAC35008BA5D8 /* HHHomeItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
