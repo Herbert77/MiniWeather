@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5262FE01B8C08D200C68934 /* LBHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */; };
+		E5DE21B91B8B072B00D05C26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21B81B8B072B00D05C26 /* main.m */; };
+		E5DE21BC1B8B072B00D05C26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */; };
+		E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21C31B8B072B00D05C26 /* Images.xcassets */; };
+		E5DE21C71B8B072B00D05C26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */; };
+		E5DE21D31B8B072B00D05C26 /* MiniWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21D21B8B072B00D05C26 /* MiniWeatherTests.m */; };
+		E5DE21EA1B8B09D200D05C26 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21E91B8B09D200D05C26 /* UIColor+FlatColors.m */; };
+		E5DE21EE1B8B0AB600D05C26 /* HHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21ED1B8B0AB600D05C26 /* HHMenuItem.m */; };
+		E5DE21F31B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21F11B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m */; };
+		E5DE21F41B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21F21B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib */; };
+		E5DE21F81B8B0B5300D05C26 /* HHMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21F71B8B0B5300D05C26 /* HHMenu.m */; };
+		E5DE21FB1B8B0CE900D05C26 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21FA1B8B0CE900D05C26 /* HHBaseViewController.m */; };
+		E5DE21FE1B8B0D9C00D05C26 /* HHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21FD1B8B0D9C00D05C26 /* HHNavigationController.m */; };
+		E5DE22071B8B0E6500D05C26 /* PoliticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22001B8B0E6500D05C26 /* PoliticsViewController.m */; };
+		E5DE22081B8B0E6500D05C26 /* TravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22021B8B0E6500D05C26 /* TravelViewController.m */; };
+		E5DE22091B8B0E6500D05C26 /* CultureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22041B8B0E6500D05C26 /* CultureViewController.m */; };
+		E5DE220A1B8B0E6500D05C26 /* NatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22061B8B0E6500D05C26 /* NatureViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5DE21CD1B8B072B00D05C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5DE21AB1B8B072B00D05C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5DE21B21B8B072B00D05C26;
+			remoteInfo = MiniWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5262FDE1B8C08D200C68934 /* LBHamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBHamburgerButton.h; sourceTree = "<group>"; };
+		E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBHamburgerButton.m; sourceTree = "<group>"; };
+		E5262FE41B8C16BF00C68934 /* MiniWeather_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniWeather_Prefix.pch; sourceTree = "<group>"; };
+		E5DE21B31B8B072B00D05C26 /* MiniWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DE21B71B8B072B00D05C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DE21B81B8B072B00D05C26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5DE21C31B8B072B00D05C26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E5DE21C61B8B072B00D05C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E5DE21CC1B8B072B00D05C26 /* MiniWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DE21D11B8B072B00D05C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DE21D21B8B072B00D05C26 /* MiniWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniWeatherTests.m; sourceTree = "<group>"; };
+		E5DE21E81B8B09D200D05C26 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		E5DE21E91B8B09D200D05C26 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		E5DE21EB1B8B09FF00D05C26 /* HHMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHMacros.h; sourceTree = "<group>"; };
+		E5DE21EC1B8B0AB600D05C26 /* HHMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMenuItem.h; sourceTree = "<group>"; };
+		E5DE21ED1B8B0AB600D05C26 /* HHMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMenuItem.m; sourceTree = "<group>"; };
+		E5DE21F01B8B0AFB00D05C26 /* HHMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		E5DE21F11B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		E5DE21F21B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5DE21F61B8B0B5300D05C26 /* HHMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMenu.h; sourceTree = "<group>"; };
+		E5DE21F71B8B0B5300D05C26 /* HHMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMenu.m; sourceTree = "<group>"; };
+		E5DE21F91B8B0CE900D05C26 /* HHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
+		E5DE21FA1B8B0CE900D05C26 /* HHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
+		E5DE21FC1B8B0D9C00D05C26 /* HHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNavigationController.h; sourceTree = "<group>"; };
+		E5DE21FD1B8B0D9C00D05C26 /* HHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNavigationController.m; sourceTree = "<group>"; };
+		E5DE21FF1B8B0E6500D05C26 /* PoliticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticsViewController.h; sourceTree = "<group>"; };
+		E5DE22001B8B0E6500D05C26 /* PoliticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticsViewController.m; sourceTree = "<group>"; };
+		E5DE22011B8B0E6500D05C26 /* TravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewController.h; sourceTree = "<group>"; };
+		E5DE22021B8B0E6500D05C26 /* TravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewController.m; sourceTree = "<group>"; };
+		E5DE22031B8B0E6500D05C26 /* CultureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CultureViewController.h; sourceTree = "<group>"; };
+		E5DE22041B8B0E6500D05C26 /* CultureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CultureViewController.m; sourceTree = "<group>"; };
+		E5DE22051B8B0E6500D05C26 /* NatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NatureViewController.h; sourceTree = "<group>"; };
+		E5DE22061B8B0E6500D05C26 /* NatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NatureViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5DE21B01B8B072B00D05C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DE21C91B8B072B00D05C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5DE21AA1B8B072B00D05C26 = {
+			isa = PBXGroup;
+			children = (
+				E5DE21B51B8B072B00D05C26 /* MiniWeather */,
+				E5DE21CF1B8B072B00D05C26 /* MiniWeatherTests */,
+				E5DE21B41B8B072B00D05C26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5DE21B41B8B072B00D05C26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21B31B8B072B00D05C26 /* MiniWeather.app */,
+				E5DE21CC1B8B072B00D05C26 /* MiniWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5DE21B51B8B072B00D05C26 /* MiniWeather */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21E31B8B08BE00D05C26 /* Functions （功能） */,
+				E5DE21E41B8B092D00D05C26 /* InitialFile （初始文件） */,
+				E5DE21DC1B8B079700D05C26 /* Utility （工具） */,
+				E5DE21B61B8B072B00D05C26 /* Supporting Files */,
+			);
+			path = MiniWeather;
+			sourceTree = "<group>";
+		};
+		E5DE21B61B8B072B00D05C26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21B71B8B072B00D05C26 /* Info.plist */,
+				E5DE21B81B8B072B00D05C26 /* main.m */,
+				E5262FE41B8C16BF00C68934 /* MiniWeather_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5DE21CF1B8B072B00D05C26 /* MiniWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21D21B8B072B00D05C26 /* MiniWeatherTests.m */,
+				E5DE21D01B8B072B00D05C26 /* Supporting Files */,
+			);
+			path = MiniWeatherTests;
+			sourceTree = "<group>";
+		};
+		E5DE21D01B8B072B00D05C26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21D11B8B072B00D05C26 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5DE21DC1B8B079700D05C26 /* Utility （工具） */ = {
+			isa = PBXGroup;
+			children = (
+				E5262FDE1B8C08D200C68934 /* LBHamburgerButton.h */,
+				E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */,
+				E5DE21EB1B8B09FF00D05C26 /* HHMacros.h */,
+				E5DE21E81B8B09D200D05C26 /* UIColor+FlatColors.h */,
+				E5DE21E91B8B09D200D05C26 /* UIColor+FlatColors.m */,
+			);
+			name = "Utility （工具）";
+			sourceTree = "<group>";
+		};
+		E5DE21DD1B8B07AA00D05C26 /* Search（搜索） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Search（搜索）";
+			sourceTree = "<group>";
+		};
+		E5DE21DE1B8B07AE00D05C26 /* Menu_HomePage（菜单与主页） */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21E71B8B099B00D05C26 /* Controller */,
+				E5DE21E61B8B099900D05C26 /* View */,
+				E5DE21E51B8B099300D05C26 /* Model */,
+			);
+			name = "Menu_HomePage（菜单与主页）";
+			sourceTree = "<group>";
+		};
+		E5DE21DF1B8B084600D05C26 /* DetailWeather （天气详情） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "DetailWeather （天气详情）";
+			sourceTree = "<group>";
+		};
+		E5DE21E01B8B086C00D05C26 /* Settings （设置） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Settings （设置）";
+			sourceTree = "<group>";
+		};
+		E5DE21E11B8B087700D05C26 /* AboutMe （个人简介） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "AboutMe （个人简介）";
+			sourceTree = "<group>";
+		};
+		E5DE21E21B8B089B00D05C26 /* Location （定位） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Location （定位）";
+			sourceTree = "<group>";
+		};
+		E5DE21E31B8B08BE00D05C26 /* Functions （功能） */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21E21B8B089B00D05C26 /* Location （定位） */,
+				E5DE21E11B8B087700D05C26 /* AboutMe （个人简介） */,
+				E5DE21E01B8B086C00D05C26 /* Settings （设置） */,
+				E5DE21DD1B8B07AA00D05C26 /* Search（搜索） */,
+				E5DE21DF1B8B084600D05C26 /* DetailWeather （天气详情） */,
+				E5DE21DE1B8B07AE00D05C26 /* Menu_HomePage（菜单与主页） */,
+			);
+			name = "Functions （功能）";
+			sourceTree = "<group>";
+		};
+		E5DE21E41B8B092D00D05C26 /* InitialFile （初始文件） */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21C31B8B072B00D05C26 /* Images.xcassets */,
+				E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */,
+				E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */,
+				E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */,
+			);
+			name = "InitialFile （初始文件）";
+			sourceTree = "<group>";
+		};
+		E5DE21E51B8B099300D05C26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21EC1B8B0AB600D05C26 /* HHMenuItem.h */,
+				E5DE21ED1B8B0AB600D05C26 /* HHMenuItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E5DE21E61B8B099900D05C26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21F51B8B0B1C00D05C26 /* Menu */,
+				E5DE21EF1B8B0AE400D05C26 /* MenuCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E5DE21E71B8B099B00D05C26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21FF1B8B0E6500D05C26 /* PoliticsViewController.h */,
+				E5DE22001B8B0E6500D05C26 /* PoliticsViewController.m */,
+				E5DE22011B8B0E6500D05C26 /* TravelViewController.h */,
+				E5DE22021B8B0E6500D05C26 /* TravelViewController.m */,
+				E5DE22031B8B0E6500D05C26 /* CultureViewController.h */,
+				E5DE22041B8B0E6500D05C26 /* CultureViewController.m */,
+				E5DE22051B8B0E6500D05C26 /* NatureViewController.h */,
+				E5DE22061B8B0E6500D05C26 /* NatureViewController.m */,
+				E5DE21F91B8B0CE900D05C26 /* HHBaseViewController.h */,
+				E5DE21FA1B8B0CE900D05C26 /* HHBaseViewController.m */,
+				E5DE21FC1B8B0D9C00D05C26 /* HHNavigationController.h */,
+				E5DE21FD1B8B0D9C00D05C26 /* HHNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E5DE21EF1B8B0AE400D05C26 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21F01B8B0AFB00D05C26 /* HHMenuCollectionViewCell.h */,
+				E5DE21F11B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m */,
+				E5DE21F21B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib */,
+			);
+			name = MenuCell;
+			sourceTree = "<group>";
+		};
+		E5DE21F51B8B0B1C00D05C26 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE21F61B8B0B5300D05C26 /* HHMenu.h */,
+				E5DE21F71B8B0B5300D05C26 /* HHMenu.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5DE21B21B8B072B00D05C26 /* MiniWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5DE21D61B8B072B00D05C26 /* Build configuration list for PBXNativeTarget "MiniWeather" */;
+			buildPhases = (
+				E5DE21AF1B8B072B00D05C26 /* Sources */,
+				E5DE21B01B8B072B00D05C26 /* Frameworks */,
+				E5DE21B11B8B072B00D05C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniWeather;
+			productName = MiniWeather;
+			productReference = E5DE21B31B8B072B00D05C26 /* MiniWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5DE21CB1B8B072B00D05C26 /* MiniWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5DE21D91B8B072B00D05C26 /* Build configuration list for PBXNativeTarget "MiniWeatherTests" */;
+			buildPhases = (
+				E5DE21C81B8B072B00D05C26 /* Sources */,
+				E5DE21C91B8B072B00D05C26 /* Frameworks */,
+				E5DE21CA1B8B072B00D05C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5DE21CE1B8B072B00D05C26 /* PBXTargetDependency */,
+			);
+			name = MiniWeatherTests;
+			productName = MiniWeatherTests;
+			productReference = E5DE21CC1B8B072B00D05C26 /* MiniWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5DE21AB1B8B072B00D05C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Herbert Hu";
+				TargetAttributes = {
+					E5DE21B21B8B072B00D05C26 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E5DE21CB1B8B072B00D05C26 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E5DE21B21B8B072B00D05C26;
+					};
+				};
+			};
+			buildConfigurationList = E5DE21AE1B8B072B00D05C26 /* Build configuration list for PBXProject "MiniWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5DE21AA1B8B072B00D05C26;
+			productRefGroup = E5DE21B41B8B072B00D05C26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5DE21B21B8B072B00D05C26 /* MiniWeather */,
+				E5DE21CB1B8B072B00D05C26 /* MiniWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5DE21B11B8B072B00D05C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DE21F41B8B0AFB00D05C26 /* HHMenuCollectionViewCell.xib in Resources */,
+				E5DE21C71B8B072B00D05C26 /* LaunchScreen.xib in Resources */,
+				E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DE21CA1B8B072B00D05C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5DE21AF1B8B072B00D05C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5262FE01B8C08D200C68934 /* LBHamburgerButton.m in Sources */,
+				E5DE21BC1B8B072B00D05C26 /* AppDelegate.m in Sources */,
+				E5DE21B91B8B072B00D05C26 /* main.m in Sources */,
+				E5DE21EA1B8B09D200D05C26 /* UIColor+FlatColors.m in Sources */,
+				E5DE220A1B8B0E6500D05C26 /* NatureViewController.m in Sources */,
+				E5DE21EE1B8B0AB600D05C26 /* HHMenuItem.m in Sources */,
+				E5DE22081B8B0E6500D05C26 /* TravelViewController.m in Sources */,
+				E5DE21F81B8B0B5300D05C26 /* HHMenu.m in Sources */,
+				E5DE22091B8B0E6500D05C26 /* CultureViewController.m in Sources */,
+				E5DE22071B8B0E6500D05C26 /* PoliticsViewController.m in Sources */,
+				E5DE21FB1B8B0CE900D05C26 /* HHBaseViewController.m in Sources */,
+				E5DE21F31B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m in Sources */,
+				E5DE21FE1B8B0D9C00D05C26 /* HHNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DE21C81B8B072B00D05C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DE21D31B8B072B00D05C26 /* MiniWeatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5DE21CE1B8B072B00D05C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5DE21B21B8B072B00D05C26 /* MiniWeather */;
+			targetProxy = E5DE21CD1B8B072B00D05C26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5DE21C61B8B072B00D05C26 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5DE21D41B8B072B00D05C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5DE21D51B8B072B00D05C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5DE21D71B8B072B00D05C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MiniWeather/MiniWeather_Prefix.pch;
+				INFOPLIST_FILE = MiniWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5DE21D81B8B072B00D05C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MiniWeather/MiniWeather_Prefix.pch;
+				INFOPLIST_FILE = MiniWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5DE21DA1B8B072B00D05C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniWeather.app/MiniWeather";
+			};
+			name = Debug;
+		};
+		E5DE21DB1B8B072B00D05C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniWeather.app/MiniWeather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5DE21AE1B8B072B00D05C26 /* Build configuration list for PBXProject "MiniWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DE21D41B8B072B00D05C26 /* Debug */,
+				E5DE21D51B8B072B00D05C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5DE21D61B8B072B00D05C26 /* Build configuration list for PBXNativeTarget "MiniWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DE21D71B8B072B00D05C26 /* Debug */,
+				E5DE21D81B8B072B00D05C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5DE21D91B8B072B00D05C26 /* Build configuration list for PBXNativeTarget "MiniWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DE21DA1B8B072B00D05C26 /* Debug */,
+				E5DE21DB1B8B072B00D05C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5DE21AB1B8B072B00D05C26 /* Project object */;
+}
