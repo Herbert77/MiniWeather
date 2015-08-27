@@ -18,5 +18,6 @@
 #import "HHBaseViewController.h"
 #import "HHMacros.h"
 #import "UIColor+FlatColors.h"
+#import "Mantle.h"
 
 #endif
