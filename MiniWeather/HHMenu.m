@@ -211,7 +211,6 @@ typedef NS_OPTIONS(NSInteger, MenuState) {
     for (HHBaseViewController* vc in self.controllerArray) {
         
         [vc.buttonHamburger setState:LBHamburgerButtonStateNotHamburger];
-        NSLog(@"%u", vc.buttonHamburger.hamburgerState);
     }
     
     [self openMenuWithDuration:menuOpenAnimationDuration];
@@ -251,7 +250,7 @@ typedef NS_OPTIONS(NSInteger, MenuState) {
     /**< 汉堡菜单按钮 状态转换
      在关闭菜单时，汉堡菜单按钮状态转变为 汉堡状*/
     for (HHBaseViewController* vc in self.controllerArray) {
-        NSLog(@"self.controllerArray count : %lu", (unsigned long)[self.controllerArray count]);
+
         [vc.buttonHamburger setState:LBHamburgerButtonStateHamburger];
     }
 

@@ -27,8 +27,6 @@
 
 @property (strong, nonatomic) HomeViewController *homeViewController;
 @property (strong, nonatomic) ProfileViewController *profileViewController;
-//@property (strong, nonatomic) PoliticsViewController *politicsInitialView;
-//@property (strong, nonatomic) TravelViewController *travelController;
 @property (strong, nonatomic) CultureViewController *cultureController;
 @property (strong, nonatomic) NatureViewController *natureController;
 
@@ -38,6 +36,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [[WeatherModelManager sharedInstance] addWeatherModelForCity:@"密云"];
+    [[WeatherModelManager sharedInstance] printDic];
+
     
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
@@ -67,9 +69,6 @@
         
         _cultureController.menuItem = weakCulture;
         self.viewControllers = @[_cultureController];
-            
-            NSLog(@"%lu", (unsigned long)[self.viewControllers count]);
-        
     };
     
     __weak typeof(HHMenuItem) *weakProfile = profile;

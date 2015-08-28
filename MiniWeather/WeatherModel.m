@@ -34,11 +34,14 @@
         NSError *error = nil;
         weatherModel.tWeatherModel = [MTLJSONAdapter modelOfClass:TWeatherModel.class fromJSONDictionary:resultDic error:&error];
         
+//        NSArray *testArray = [resultDic objectForKey:@"future"];
+//        NSLog(@"%@", testArray);
+        
         // fWeatherModel
-        weatherModel.fWeatherModel = [FWeatherModel fWeatherModelWithArray:[resultDic objectForKey:@"future"]];
+        weatherModel.fWeatherModel = [FWeatherModel fWeatherModelWithDictionary:[resultDic objectForKey:@"future"]];
         
         // cityName
-        if (!weatherModel.tWeatherModel) {
+        if (weatherModel.tWeatherModel) {
             
             weatherModel.cityName = weatherModel.tWeatherModel.city;
         } else {

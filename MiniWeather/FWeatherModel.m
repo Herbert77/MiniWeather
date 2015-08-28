@@ -61,16 +61,21 @@
 }
 
 //???:unapprehended
-- (id)copyWithZone:(NSZone *)zone {
+//- (id)copyWithZone:(NSZone *)zone {
+//    
+//    FOneDayModel *fOneDayModel = [[self.class allocWithZone:zone] init];
+//    
+//    fOneDayModel->_fOneDay_temp    = self.fOneDay_temp;
+//    fOneDayModel->_fOneDay_weather = self.fOneDay_weather;
+//    fOneDayModel->_fOneDay_week    = self.fOneDay_week;
+//    fOneDayModel->_fOneDay_date    = self.fOneDay_date;
+//    
+//    return fOneDayModel;
+//}
+
+- (void)print {
     
-    FOneDayModel *fOneDayModel = [[self.class allocWithZone:zone] init];
-    
-    fOneDayModel->_fOneDay_temp    = self.fOneDay_temp;
-    fOneDayModel->_fOneDay_weather = self.fOneDay_weather;
-    fOneDayModel->_fOneDay_week    = self.fOneDay_week;
-    fOneDayModel->_fOneDay_date    = self.fOneDay_date;
-    
-    return fOneDayModel;
+    NSLog(@"temp %@ \n weather %@ \n date %@ \n week %@ \n", _fOneDay_temp, _fOneDay_weather, _fOneDay_date, _fOneDay_week);
 }
 
 @end
@@ -79,11 +84,11 @@
 
 @implementation FWeatherModel
 
-+ (instancetype)fWeatherModelWithArray:(NSArray *)futureArray {
++ (instancetype)fWeatherModelWithDictionary:(NSDictionary *)futureDic {
     
-    if (!futureArray) {
+    if (!futureDic) {
         
-        NSLog(@"ERROR: Parameter futureArray is nil");
+        NSLog(@"ERROR: Parameter futureDic is nil");
         return nil;
     }
     
@@ -91,21 +96,81 @@
     
     if (fWeatherModel) {
         
-        fWeatherModel.fOneDayModelsArray = [NSMutableArray new];
+        fWeatherModel.fOneDayModelsArray = [[NSMutableArray alloc] init];
     }
     
     // 未来 6天的天气Model被依次创建，并添加到 array 中
     for (int i=1; i<=6; i++) {
         
+        NSString *key = [fWeatherModel p_futureDicKeyForNumberOfDays:i];
+        NSDictionary *tempDic = [futureDic objectForKey:key];
+        
         // 1. Create
-        FOneDayModel *fOneDayModel = [[FOneDayModel alloc] initWithTemp:[futureArray[i] objectForKey:@"temperature"] weather:[futureArray[i] objectForKey:@"weather"] week:[futureArray[i] objectForKey:@"week"] date:[futureArray[i] objectForKey:@"date"]];
+        FOneDayModel *fOneDayModel = [[FOneDayModel alloc] initWithTemp:[tempDic objectForKey:@"temperature"] weather:[tempDic objectForKey:@"weather"] week:[tempDic objectForKey:@"week"] date:[tempDic objectForKey:@"date"]];
+        
+//        [fOneDayModel print];
         
         // 2. Add to array
         [fWeatherModel.fOneDayModelsArray addObject:fOneDayModel];
     }
     
+    return fWeatherModel;
+}
+
+/**
+ *  返回外来几天的日期字符串（用以拼接出获取未来天气的键值，如：day_20150827）
+ *
+ *  @param dayNumber 1（代表明天） 2（代表后天） 3（代表大后天）以此类推
+ *
+ *  @return date
+ */
+- (NSString *)p_dateForNumberOfDays:(int)numberOfDays {
     
-    return nil;
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyyMMdd"];
+    NSTimeInterval secondsPerDay = 24*60*60;
+
+    return [dateFormatter stringFromDate:[today dateByAddingTimeInterval:numberOfDays*secondsPerDay]];
+}
+
+/**
+ *  拼接出键值 （ 如：day_20150827）
+ *
+ *  @param numberOfDays 天数
+ *
+ *  @return 键
+ */
+- (NSString *)p_futureDicKeyForNumberOfDays:(int)numberOfDays {
+    
+    NSString *string = [self p_dateForNumberOfDays:numberOfDays];
+    return [@"day_" stringByAppendingString:string];
+}
+
+#pragma mark - Encode and Decode
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    //FIXME: 对 fOneDayModelsArray 进行 decode
+#warning FIXME
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    
+    NSInteger count = [self.fOneDayModelsArray count];
+
+    for (int i=0; i<count; i++) {
+        
+        NSString *key = [NSString stringWithFormat:@"fOneDayModel_%d", i];
+        [aCoder encodeObject:[self.fOneDayModelsArray objectAtIndex:i] forKey:key];
+    }
 }
 
 @end

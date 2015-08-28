@@ -11,23 +11,25 @@
 /**
  *  未来 某一天的天气数据 Model
  */
-@interface FOneDayModel : NSObject <NSCopying, NSCoding>
+@interface FOneDayModel : NSObject <NSCoding>
 
-@property (copy, nonatomic) NSString *fOneDay_temp; /**< 气温区间 */
-@property (copy, nonatomic) NSString *fOneDay_weather; /**< 天气状况 */
-@property (copy, nonatomic) NSString *fOneDay_week; /**< 星期 */
-@property (copy, nonatomic) NSString *fOneDay_date; /**< 日期 （20140804） */
+@property (strong, nonatomic) NSString *fOneDay_temp; /**< 气温区间 */
+@property (strong, nonatomic) NSString *fOneDay_weather; /**< 天气状况 */
+@property (strong, nonatomic) NSString *fOneDay_week; /**< 星期 */
+@property (strong, nonatomic) NSString *fOneDay_date; /**< 日期 （20140804） */
 
 - (instancetype)initWithTemp:(NSString *)temp weather:(NSString *)weather week:(NSString *)week date:(NSString *)date;
+
+- (void)print;
 
 @end
 
 /**
  *  未来 6天的天气数据 Model
  */
-@interface FWeatherModel : NSObject
+@interface FWeatherModel : NSObject <NSCoding>
 
-@property (copy, nonatomic) NSMutableArray *fOneDayModelsArray; /**< 未来 6天得天气数据数组 */
+@property (strong, nonatomic) NSMutableArray *fOneDayModelsArray; /**< 未来 6天的天气数据数组 */
 
 /**
  *  初始化方法
@@ -36,6 +38,8 @@
  *
  *  @return 返回该对象实例
  */
-+ (instancetype)fWeatherModelWithArray:(NSArray *)futureArray;
++ (instancetype)fWeatherModelWithDictionary:(NSDictionary *)futureDic;
+
+
 
 @end

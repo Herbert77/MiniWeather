@@ -20,6 +20,9 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    // Binding Juhe API
+    [[JHOpenidSupplier shareSupplier] registerJuheAPIByOpenId:@"JH31e5fac42442d0b8f4cebc4ca717f7c7"];
+    
     HHNavigationController *navigationController = [[HHNavigationController alloc] init];
     
     self.window.rootViewController = navigationController;

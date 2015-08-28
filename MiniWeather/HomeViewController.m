@@ -32,7 +32,7 @@
 - (void)initHomeTableView {
     
 
-    _homeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-80) style:UITableViewStylePlain];
+    _homeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kStatusBarHeight, self.view.frame.size.width, self.view.frame.size.height-80) style:UITableViewStylePlain];
     _homeTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _homeTableView.backgroundColor = [UIColor flatWisteriaColor];
     _homeTableView.delegate = self;

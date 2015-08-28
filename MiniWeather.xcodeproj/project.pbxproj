@@ -13,6 +13,10 @@
 		E52C4CED1B8EEACF0010D8C6 /* TWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CEC1B8EEACF0010D8C6 /* TWeatherModel.m */; };
 		E52C4CF11B8EFA390010D8C6 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */; };
 		E52C4CF81B8F01950010D8C6 /* WeatherModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */; };
+		E578E8441B8FFF2F002A36E8 /* JuheApisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */; };
+		E578E84A1B8FFFC9002A36E8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E8491B8FFFC9002A36E8 /* CoreTelephony.framework */; };
+		E578E84C1B8FFFD4002A36E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E84B1B8FFFD4002A36E8 /* AdSupport.framework */; };
+		E578E84E1B8FFFE4002A36E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E84D1B8FFFE4002A36E8 /* CoreLocation.framework */; };
 		E5B8B43F1B8D63F8008BA5D8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B43E1B8D63F8008BA5D8 /* HomeViewController.m */; };
 		E5B8B4481B8D6765008BA5D8 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B4461B8D6765008BA5D8 /* HomeCell.m */; };
 		E5B8B4491B8D6765008BA5D8 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B8B4471B8D6765008BA5D8 /* HomeCell.xib */; };
@@ -20,7 +24,7 @@
 		E5B8B4571B8DB282008BA5D8 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B8B4551B8DB282008BA5D8 /* ProfileViewController.m */; };
 		E5B8B4581B8DB282008BA5D8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B8B4561B8DB282008BA5D8 /* ProfileViewController.xib */; };
 		E5DE21B91B8B072B00D05C26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21B81B8B072B00D05C26 /* main.m */; };
-		E5DE21BC1B8B072B00D05C26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */; };
+		E5DE21BC1B8B072B00D05C26 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21BB1B8B072B00D05C26 /* AppDelegate.mm */; };
 		E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21C31B8B072B00D05C26 /* Images.xcassets */; };
 		E5DE21C71B8B072B00D05C26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */; };
 		E5DE21D31B8B072B00D05C26 /* MiniWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE21D21B8B072B00D05C26 /* MiniWeatherTests.m */; };
@@ -62,6 +66,12 @@
 		E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 		E52C4CF61B8F01950010D8C6 /* WeatherModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModelManager.h; sourceTree = "<group>"; };
 		E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModelManager.m; sourceTree = "<group>"; };
+		E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = JuheApisSDK.a; path = ../JuheApisSDK.a; sourceTree = "<group>"; };
+		E578E8471B8FFF7B002A36E8 /* JHAPISDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAPISDK.h; sourceTree = "<group>"; };
+		E578E8481B8FFF7B002A36E8 /* JHOpenidSupplier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHOpenidSupplier.h; sourceTree = "<group>"; };
+		E578E8491B8FFFC9002A36E8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E578E84B1B8FFFD4002A36E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E578E84D1B8FFFE4002A36E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E5B8B43D1B8D63F8008BA5D8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E5B8B43E1B8D63F8008BA5D8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E5B8B4451B8D6765008BA5D8 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
@@ -76,7 +86,7 @@
 		E5DE21B71B8B072B00D05C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5DE21B81B8B072B00D05C26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5DE21BB1B8B072B00D05C26 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		E5DE21C31B8B072B00D05C26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5DE21C61B8B072B00D05C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E5DE21CC1B8B072B00D05C26 /* MiniWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +121,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E578E84E1B8FFFE4002A36E8 /* CoreLocation.framework in Frameworks */,
+				E578E84C1B8FFFD4002A36E8 /* AdSupport.framework in Frameworks */,
+				E578E84A1B8FFFC9002A36E8 /* CoreTelephony.framework in Frameworks */,
 				2ED780F9F8C1AA99BF2248C0 /* libPods.a in Frameworks */,
+				E578E8441B8FFF2F002A36E8 /* JuheApisSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +142,9 @@
 		46196C109580E5AF31CA303B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E578E84D1B8FFFE4002A36E8 /* CoreLocation.framework */,
+				E578E84B1B8FFFD4002A36E8 /* AdSupport.framework */,
+				E578E8491B8FFFC9002A36E8 /* CoreTelephony.framework */,
 				460299CC66D759CC0589095A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -162,6 +179,33 @@
 				E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */,
 			);
 			name = "Model （天气数据模型）";
+			sourceTree = "<group>";
+		};
+		E578E8381B8FFCB4002A36E8 /* Juhe （聚合数据SDK） */ = {
+			isa = PBXGroup;
+			children = (
+				E578E8451B8FFF60002A36E8 /* include */,
+				E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */,
+			);
+			name = "Juhe （聚合数据SDK）";
+			sourceTree = "<group>";
+		};
+		E578E8451B8FFF60002A36E8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E578E8461B8FFF69002A36E8 /* JuheApisSDK */,
+			);
+			name = include;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E578E8461B8FFF69002A36E8 /* JuheApisSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E578E8471B8FFF7B002A36E8 /* JHAPISDK.h */,
+				E578E8481B8FFF7B002A36E8 /* JHOpenidSupplier.h */,
+			);
+			name = JuheApisSDK;
 			sourceTree = "<group>";
 		};
 		E5B8B43C1B8D63B3008BA5D8 /* TempVC */ = {
@@ -295,6 +339,7 @@
 		E5DE21DC1B8B079700D05C26 /* Utility （工具） */ = {
 			isa = PBXGroup;
 			children = (
+				E578E8381B8FFCB4002A36E8 /* Juhe （聚合数据SDK） */,
 				E5262FDE1B8C08D200C68934 /* LBHamburgerButton.h */,
 				E5262FDF1B8C08D200C68934 /* LBHamburgerButton.m */,
 				E5DE21EB1B8B09FF00D05C26 /* HHMacros.h */,
@@ -373,7 +418,7 @@
 				E5DE21C31B8B072B00D05C26 /* Images.xcassets */,
 				E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */,
 				E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */,
-				E5DE21BB1B8B072B00D05C26 /* AppDelegate.m */,
+				E5DE21BB1B8B072B00D05C26 /* AppDelegate.mm */,
 			);
 			name = "InitialFile （初始文件）";
 			sourceTree = "<group>";
@@ -566,7 +611,7 @@
 			files = (
 				E52C4CF81B8F01950010D8C6 /* WeatherModelManager.m in Sources */,
 				E5262FE01B8C08D200C68934 /* LBHamburgerButton.m in Sources */,
-				E5DE21BC1B8B072B00D05C26 /* AppDelegate.m in Sources */,
+				E5DE21BC1B8B072B00D05C26 /* AppDelegate.mm in Sources */,
 				E5DE21B91B8B072B00D05C26 /* main.m in Sources */,
 				E52C4CEA1B8EEA0C0010D8C6 /* FWeatherModel.m in Sources */,
 				E5DE21EA1B8B09D200D05C26 /* UIColor+FlatColors.m in Sources */,
@@ -707,6 +752,11 @@
 				GCC_PREFIX_HEADER = MiniWeather/MiniWeather_Prefix.pch;
 				INFOPLIST_FILE = MiniWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MiniWeather",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -720,6 +770,11 @@
 				GCC_PREFIX_HEADER = MiniWeather/MiniWeather_Prefix.pch;
 				INFOPLIST_FILE = MiniWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MiniWeather",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

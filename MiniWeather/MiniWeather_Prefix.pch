@@ -19,5 +19,8 @@
 #import "HHMacros.h"
 #import "UIColor+FlatColors.h"
 #import "Mantle.h"
+#import "JHAPISDK.h"
+#import "JHOpenidSupplier.h"
+#import "WeatherModelManager.h"
 
 #endif

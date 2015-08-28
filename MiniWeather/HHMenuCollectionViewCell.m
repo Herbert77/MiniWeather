@@ -33,7 +33,6 @@
     
     _menuItem = menuItem;
     NSString *imageName = [NSString stringWithFormat:@"%@", [_menuItem iconImageName]];
-    NSLog(@"imageName %@", imageName);
     _iconImageView.image = [UIImage imageNamed:imageName];
     _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     
