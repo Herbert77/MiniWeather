@@ -10,12 +10,20 @@
 
 @class WeatherModel;
 
+typedef void(^RequestCompletion)();
+
 /**
  *  天气数据管理类
  */
 @interface WeatherModelManager : NSObject
 
-@property (copy, nonatomic) NSMutableDictionary *weatherModelsDic; /**< @key 城市名 @value Model */
+@property (strong, nonatomic) NSMutableArray *addedCities;  /**< 需要显示天气信息的城市列表 */
+@property (strong, nonatomic) NSMutableDictionary *weatherModelsDic; /**< @key 城市名 @value Model */
+@property (copy, nonatomic) NSArray *cityList; /**< 城市列表 */
+
+@property (weak, nonatomic) RequestCompletion RequestCompletionBlock;
+
+@property (weak, nonatomic) UITableView *tableView;
 
 /**
  *  指定初始化
@@ -55,5 +63,17 @@
  *  @test 打印数据字典
  */
 - (void)printDic;
+
+/**
+ *  请求到提供天气信息的城市列表
+ *  写入 AvailableCities.plist 文件中
+ */
+- (void)requestCityList;
+
+/**
+ *  加载 cityList.plist 文件
+ *  获取 城市列表
+ */
+- (void)loadCityListPlist;
 
 @end

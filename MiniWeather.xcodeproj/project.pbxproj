@@ -13,6 +13,10 @@
 		E52C4CED1B8EEACF0010D8C6 /* TWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CEC1B8EEACF0010D8C6 /* TWeatherModel.m */; };
 		E52C4CF11B8EFA390010D8C6 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */; };
 		E52C4CF81B8F01950010D8C6 /* WeatherModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */; };
+		E57045021B93F753009CAC8D /* SearchBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045011B93F753009CAC8D /* SearchBaseTableController.m */; };
+		E57045041B93FCD9009CAC8D /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E57045031B93FCD9009CAC8D /* cityList.plist */; };
+		E57045071B942D4B009CAC8D /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045061B942D4B009CAC8D /* SearchResultsViewController.m */; };
+		E570450A1B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045091B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m */; };
 		E578E8441B8FFF2F002A36E8 /* JuheApisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */; };
 		E578E84A1B8FFFC9002A36E8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E8491B8FFFC9002A36E8 /* CoreTelephony.framework */; };
 		E578E84C1B8FFFD4002A36E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E84B1B8FFFD4002A36E8 /* AdSupport.framework */; };
@@ -66,6 +70,13 @@
 		E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 		E52C4CF61B8F01950010D8C6 /* WeatherModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModelManager.h; sourceTree = "<group>"; };
 		E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModelManager.m; sourceTree = "<group>"; };
+		E57045001B93F753009CAC8D /* SearchBaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBaseTableController.h; sourceTree = "<group>"; };
+		E57045011B93F753009CAC8D /* SearchBaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBaseTableController.m; sourceTree = "<group>"; };
+		E57045031B93FCD9009CAC8D /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
+		E57045051B942D4B009CAC8D /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		E57045061B942D4B009CAC8D /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		E57045081B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarEmbeddedInNavigationBarViewController.h; sourceTree = "<group>"; };
+		E57045091B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarEmbeddedInNavigationBarViewController.m; sourceTree = "<group>"; };
 		E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = JuheApisSDK.a; path = ../JuheApisSDK.a; sourceTree = "<group>"; };
 		E578E8471B8FFF7B002A36E8 /* JHAPISDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAPISDK.h; sourceTree = "<group>"; };
 		E578E8481B8FFF7B002A36E8 /* JHOpenidSupplier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHOpenidSupplier.h; sourceTree = "<group>"; };
@@ -352,6 +363,12 @@
 		E5DE21DD1B8B07AA00D05C26 /* Search（搜索） */ = {
 			isa = PBXGroup;
 			children = (
+				E57045001B93F753009CAC8D /* SearchBaseTableController.h */,
+				E57045011B93F753009CAC8D /* SearchBaseTableController.m */,
+				E57045051B942D4B009CAC8D /* SearchResultsViewController.h */,
+				E57045061B942D4B009CAC8D /* SearchResultsViewController.m */,
+				E57045081B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.h */,
+				E57045091B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m */,
 			);
 			name = "Search（搜索）";
 			sourceTree = "<group>";
@@ -419,6 +436,7 @@
 				E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */,
 				E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */,
 				E5DE21BB1B8B072B00D05C26 /* AppDelegate.mm */,
+				E57045031B93FCD9009CAC8D /* cityList.plist */,
 			);
 			name = "InitialFile （初始文件）";
 			sourceTree = "<group>";
@@ -559,6 +577,7 @@
 				E5B8B4491B8D6765008BA5D8 /* HomeCell.xib in Resources */,
 				E5B8B4581B8DB282008BA5D8 /* ProfileViewController.xib in Resources */,
 				E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */,
+				E57045041B93FCD9009CAC8D /* cityList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +631,7 @@
 				E52C4CF81B8F01950010D8C6 /* WeatherModelManager.m in Sources */,
 				E5262FE01B8C08D200C68934 /* LBHamburgerButton.m in Sources */,
 				E5DE21BC1B8B072B00D05C26 /* AppDelegate.mm in Sources */,
+				E57045021B93F753009CAC8D /* SearchBaseTableController.m in Sources */,
 				E5DE21B91B8B072B00D05C26 /* main.m in Sources */,
 				E52C4CEA1B8EEA0C0010D8C6 /* FWeatherModel.m in Sources */,
 				E5DE21EA1B8B09D200D05C26 /* UIColor+FlatColors.m in Sources */,
@@ -619,6 +639,7 @@
 				E52C4CF11B8EFA390010D8C6 /* WeatherModel.m in Sources */,
 				E5B8B43F1B8D63F8008BA5D8 /* HomeViewController.m in Sources */,
 				E5DE21EE1B8B0AB600D05C26 /* HHMenuItem.m in Sources */,
+				E570450A1B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m in Sources */,
 				E5DE22081B8B0E6500D05C26 /* TravelViewController.m in Sources */,
 				E5DE21F81B8B0B5300D05C26 /* HHMenu.m in Sources */,
 				E5B8B4571B8DB282008BA5D8 /* ProfileViewController.m in Sources */,
@@ -629,6 +650,7 @@
 				E5B8B4481B8D6765008BA5D8 /* HomeCell.m in Sources */,
 				E5DE21F31B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m in Sources */,
 				E5DE21FE1B8B0D9C00D05C26 /* HHNavigationController.m in Sources */,
+				E57045071B942D4B009CAC8D /* SearchResultsViewController.m in Sources */,
 				E5B8B44D1B8DAC35008BA5D8 /* HHHomeItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

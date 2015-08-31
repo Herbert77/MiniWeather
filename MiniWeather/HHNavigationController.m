@@ -37,9 +37,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [[WeatherModelManager sharedInstance] addWeatherModelForCity:@"密云"];
-    [[WeatherModelManager sharedInstance] printDic];
-
+//    [[WeatherModelManager sharedInstance] addWeatherModelForCity:@"密云"];
+//    [[WeatherModelManager sharedInstance] printDic];
+    
+//    [[WeatherModelManager sharedInstance] requestCityList];
     
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
