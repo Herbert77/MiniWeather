@@ -14,12 +14,58 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY3-QZ-lRs">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                    <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-Ci-WoI">
+                    <rect key="frame" x="253" y="50" width="95" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="DmB-O0-k1Z"/>
+                        <constraint firstAttribute="height" constant="95" id="q69-el-SzZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scriptogr.am/herbert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-GJ-coi">
+                    <rect key="frame" x="189" y="165" width="223" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="gg4-Q9-j4z"/>
+                        <constraint firstAttribute="width" constant="223" id="ynS-9D-jCQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                    <color key="textColor" red="0.60784313725490191" green="0.76078431372549016" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="迷你天气" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-7I-4YR">
+                    <rect key="frame" x="189" y="239" width="223" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="HUK-dD-gD8"/>
+                        <constraint firstAttribute="width" constant="223" id="NBa-Uw-dyk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <color key="textColor" red="0.37254901960784315" green="0.68627450980392157" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为您提供精简有效的天气信息服务。感谢使用~     ；）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5R-Cx-M7v">
+                    <rect key="frame" x="137" y="291" width="326" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="8Tq-Es-tej"/>
+                        <constraint firstAttribute="width" constant="326" id="zgr-3B-FZu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <color key="textColor" red="0.37254901960784315" green="0.68627450980392157" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="VcE-GJ-coi" secondAttribute="centerX" id="163-Y9-JoP"/>
+                <constraint firstItem="VcE-GJ-coi" firstAttribute="top" secondItem="eYa-Ci-WoI" secondAttribute="bottom" constant="20" id="4Zn-ld-cDk"/>
+                <constraint firstAttribute="centerX" secondItem="v5R-Cx-M7v" secondAttribute="centerX" id="7AW-hb-Y3m"/>
+                <constraint firstItem="eYa-Ci-WoI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="Flb-LP-bN1"/>
+                <constraint firstAttribute="centerX" secondItem="eYa-Ci-WoI" secondAttribute="centerX" id="MeJ-MO-kMx"/>
+                <constraint firstItem="v5R-Cx-M7v" firstAttribute="top" secondItem="ENv-7I-4YR" secondAttribute="bottom" constant="24" id="RBX-gn-QXA"/>
+                <constraint firstItem="ENv-7I-4YR" firstAttribute="top" secondItem="VcE-GJ-coi" secondAttribute="bottom" constant="50" id="dgG-em-bVo"/>
+                <constraint firstAttribute="centerX" secondItem="ENv-7I-4YR" secondAttribute="centerX" id="dgV-Tm-aci"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="profileImage" width="100" height="100"/>
+    </resources>
 </document>

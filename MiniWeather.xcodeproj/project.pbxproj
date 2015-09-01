@@ -14,7 +14,6 @@
 		E52C4CF11B8EFA390010D8C6 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF01B8EFA390010D8C6 /* WeatherModel.m */; };
 		E52C4CF81B8F01950010D8C6 /* WeatherModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */; };
 		E57045021B93F753009CAC8D /* SearchBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045011B93F753009CAC8D /* SearchBaseTableController.m */; };
-		E57045041B93FCD9009CAC8D /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E57045031B93FCD9009CAC8D /* cityList.plist */; };
 		E57045071B942D4B009CAC8D /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045061B942D4B009CAC8D /* SearchResultsViewController.m */; };
 		E570450A1B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57045091B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.m */; };
 		E578E8441B8FFF2F002A36E8 /* JuheApisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E578E8431B8FFF2F002A36E8 /* JuheApisSDK.a */; };
@@ -43,6 +42,8 @@
 		E5DE22081B8B0E6500D05C26 /* TravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22021B8B0E6500D05C26 /* TravelViewController.m */; };
 		E5DE22091B8B0E6500D05C26 /* CultureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22041B8B0E6500D05C26 /* CultureViewController.m */; };
 		E5DE220A1B8B0E6500D05C26 /* NatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE22061B8B0E6500D05C26 /* NatureViewController.m */; };
+		E5E1605D1B95842A00650B71 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1605C1B95842A00650B71 /* SettingsViewController.m */; };
+		E5E1605F1B95945A00650B71 /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5E1605E1B95945A00650B71 /* cityList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,6 @@
 		E52C4CF71B8F01950010D8C6 /* WeatherModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModelManager.m; sourceTree = "<group>"; };
 		E57045001B93F753009CAC8D /* SearchBaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBaseTableController.h; sourceTree = "<group>"; };
 		E57045011B93F753009CAC8D /* SearchBaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBaseTableController.m; sourceTree = "<group>"; };
-		E57045031B93FCD9009CAC8D /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
 		E57045051B942D4B009CAC8D /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		E57045061B942D4B009CAC8D /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		E57045081B942F2D009CAC8D /* SearchBarEmbeddedInNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarEmbeddedInNavigationBarViewController.h; sourceTree = "<group>"; };
@@ -125,6 +125,9 @@
 		E5DE22041B8B0E6500D05C26 /* CultureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CultureViewController.m; sourceTree = "<group>"; };
 		E5DE22051B8B0E6500D05C26 /* NatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NatureViewController.h; sourceTree = "<group>"; };
 		E5DE22061B8B0E6500D05C26 /* NatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NatureViewController.m; sourceTree = "<group>"; };
+		E5E1605B1B95842A00650B71 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E5E1605C1B95842A00650B71 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E5E1605E1B95945A00650B71 /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +397,8 @@
 		E5DE21E01B8B086C00D05C26 /* Settings （设置） */ = {
 			isa = PBXGroup;
 			children = (
+				E5E1605B1B95842A00650B71 /* SettingsViewController.h */,
+				E5E1605C1B95842A00650B71 /* SettingsViewController.m */,
 			);
 			name = "Settings （设置）";
 			sourceTree = "<group>";
@@ -436,7 +441,7 @@
 				E5DE21C51B8B072B00D05C26 /* LaunchScreen.xib */,
 				E5DE21BA1B8B072B00D05C26 /* AppDelegate.h */,
 				E5DE21BB1B8B072B00D05C26 /* AppDelegate.mm */,
-				E57045031B93FCD9009CAC8D /* cityList.plist */,
+				E5E1605E1B95945A00650B71 /* cityList.plist */,
 			);
 			name = "InitialFile （初始文件）";
 			sourceTree = "<group>";
@@ -577,7 +582,7 @@
 				E5B8B4491B8D6765008BA5D8 /* HomeCell.xib in Resources */,
 				E5B8B4581B8DB282008BA5D8 /* ProfileViewController.xib in Resources */,
 				E5DE21C41B8B072B00D05C26 /* Images.xcassets in Resources */,
-				E57045041B93FCD9009CAC8D /* cityList.plist in Resources */,
+				E5E1605F1B95945A00650B71 /* cityList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +655,7 @@
 				E5B8B4481B8D6765008BA5D8 /* HomeCell.m in Sources */,
 				E5DE21F31B8B0AFB00D05C26 /* HHMenuCollectionViewCell.m in Sources */,
 				E5DE21FE1B8B0D9C00D05C26 /* HHNavigationController.m in Sources */,
+				E5E1605D1B95842A00650B71 /* SettingsViewController.m in Sources */,
 				E57045071B942D4B009CAC8D /* SearchResultsViewController.m in Sources */,
 				E5B8B44D1B8DAC35008BA5D8 /* HHHomeItem.m in Sources */,
 			);

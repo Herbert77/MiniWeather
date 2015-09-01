@@ -24,6 +24,13 @@ NSString *const SearchBaseTableControllerCellIdentifier = @"searchResultsCell";
     [super viewDidLoad];
     
     // 加载 .plist 文件，获取 城市列表
+//    [[WeatherModelManager sharedInstance] loadCityListPlistWithCompletionHandler:^(NSArray *cityList) {
+    
+//        self.allResults = [cityList copy];
+//        self.visibleResults = self.allResults;
+//        [self.tableView reloadData];
+//    }];
+    
     [[WeatherModelManager sharedInstance] loadCityListPlist];
     
     self.allResults = [[WeatherModelManager sharedInstance] cityList];
@@ -87,7 +94,14 @@ NSString *const SearchBaseTableControllerCellIdentifier = @"searchResultsCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     //TODO: Handle the selection
-    [[WeatherModelManager sharedInstance] addWeatherModelForCity:[self.visibleResults objectAtIndex:indexPath.row]];
+    [[WeatherModelManager sharedInstance] addWeatherModelForCity:
+     
+                                            [self.visibleResults objectAtIndex:indexPath.row]
+     
+                                           withCompletionHandler:^{
+                                               
+                                            [self.homeTableView reloadData];
+    }];
     
     // Post a notification for loading animation.
     

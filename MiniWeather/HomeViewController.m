@@ -27,13 +27,6 @@
     [self initHomeTableView];
     
     [self initAddButton];
-    
-    // Callback
-    [[WeatherModelManager sharedInstance] setRequestCompletionBlock: ^{
-        
-        [_homeTableView reloadData];
-        
-    }];
 }
 
 #pragma mark - Initilization
@@ -47,7 +40,6 @@
     _homeTableView.delegate = self;
     _homeTableView.dataSource = self;
     
-//    [_homeTableView registerClass:[HomeCell class] forCellReuseIdentifier:HomeCellIdentifier];
     [_homeTableView registerNib:[UINib nibWithNibName:@"HomeCell" bundle:nil] forCellReuseIdentifier:HomeCellIdentifier];
     
     [self.view addSubview:_homeTableView];
@@ -111,7 +103,8 @@
 - (void)addButtonPressed:(id)sender {
     
     SearchBarEmbeddedInNavigationBarViewController *searchBarEmbeddedInNavigationViewController = [[SearchBarEmbeddedInNavigationBarViewController alloc] init];
-    
+    // 传值
+    searchBarEmbeddedInNavigationViewController.homeTableView = _homeTableView;
     [self.navigationController pushViewController:searchBarEmbeddedInNavigationViewController animated:YES];
 }
 

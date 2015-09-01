@@ -13,4 +13,6 @@
 @property (copy, nonatomic) NSString *filterString;
 @property (copy, readonly, nonatomic) NSArray *visibleResults;
 
+@property (weak, nonatomic) UITableView *homeTableView;
+
 @end

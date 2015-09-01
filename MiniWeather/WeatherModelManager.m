@@ -58,7 +58,7 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
 
 #pragma mark - Add New Model
 
-- (BOOL)addWeatherModelForCity:(NSString *)cityName {
+- (BOOL)addWeatherModelForCity:(NSString *)cityName withCompletionHandler:(RequestCompletion)requestCompletion {
     
     if (!cityName) {
         
@@ -91,7 +91,7 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
                             [_addedCities addObject:weatherModel.cityName];
                             [_weatherModelsDic setObject:weatherModel forKey:weatherModel.cityName];
                             
-                            _RequestCompletionBlock();
+                            requestCompletion();
                             
                         } Failure:^(NSError *error) {
                             
@@ -142,7 +142,7 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
 
 #pragma mark - Request cityList
 
-- (void)requestCityList {
+- (void)requestCityListWithCompletionHandler:(RequestCityListCompletion)requestCityListCompletion {
     
     // 1. 请求到 Json 数据
     JHAPISDK *juheapi = [JHAPISDK shareJHAPISDK];
@@ -183,7 +183,9 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
         
         NSLog(@"readArray :\n %@", mutableArray);
         
-//        self.cityList = mutableArray;
+        self.cityList = mutableArray;
+        
+        requestCityListCompletion(mutableArray);
         
         // 写入文件
         NSFileManager *fm = [NSFileManager defaultManager];
@@ -211,12 +213,14 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
     NSString *DocPath = [path objectAtIndex:0];
     NSString *filePath = [DocPath stringByAppendingPathComponent:fileName];
     
+    NSLog(@"filePath %@", filePath);
+    
     return filePath;
 }
 
 #pragma mark - Load cityList Plist File
 
-- (void)loadCityListPlist {
+- (void)loadCityListPlistWithCompletionHandler:(RequestCityListCompletion)requestCityListCompletion {
     
     NSString *fileName = [self p_filePathWithFileName:@"cityList.plist"];
     
@@ -226,5 +230,18 @@ NSString *const CityListPath = @"http://v.juhe.cn/weather/citys";
         
 //        NSLog(@"self.cityList: %@", self.cityList);
     }
+    else {
+        
+        [self requestCityListWithCompletionHandler:requestCityListCompletion];
+    }
 }
+
+- (void)loadCityListPlist {
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"cityList" ofType:@"plist"];
+    NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    
+    self.cityList = tempArray;
+}
+
 @end

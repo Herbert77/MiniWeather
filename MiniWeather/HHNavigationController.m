@@ -11,13 +11,13 @@
 #import "HHMenuItem.h"
 #import "UIColor+FlatColors.h"
 #import "PoliticsViewController.h"
-#import "NatureViewController.h"
 #import "TravelViewController.h"
 #import "CultureViewController.h"
 #import "HHBaseViewController.h"
 
 #import "HomeViewController.h"
 #import "ProfileViewController.h"
+#import "SettingsViewController.h"
 
 @interface HHNavigationController ()
 
@@ -28,7 +28,7 @@
 @property (strong, nonatomic) HomeViewController *homeViewController;
 @property (strong, nonatomic) ProfileViewController *profileViewController;
 @property (strong, nonatomic) CultureViewController *cultureController;
-@property (strong, nonatomic) NatureViewController *natureController;
+@property (strong, nonatomic) SettingsViewController *settingsViewContoller;
 
 @end
 
@@ -50,8 +50,9 @@
     
     HHMenuItem *home    = [HHMenuItem initWithIconImageName:@"weather" withColorScheme:[UIColor flatWisteriaColor]];
     HHMenuItem *culture = [HHMenuItem initWithIconImageName:@"location" withColorScheme:[UIColor flatSunFlowerColor]];
-    HHMenuItem *profile = [HHMenuItem initWithIconImageName:@"introduction" withColorScheme:[UIColor flatPumpkinColor]];
-    HHMenuItem *nature  = [HHMenuItem initWithIconImageName:@"settings" withColorScheme:[UIColor flatSilverColor]];
+    // [UIColor colorWithRed:236/255.0 green:240/255.0 blue:241/255.0 alpha:1.0]
+    HHMenuItem *profile = [HHMenuItem initWithIconImageName:@"introduction" withColorScheme:[UIColor colorWithRed:224/255.0 green:230/255.0 blue:231/255.0 alpha:1.0]];
+    HHMenuItem *settings  = [HHMenuItem initWithIconImageName:@"settings" withColorScheme:[UIColor flatPeterRiverColor]];
     
     [self initAllViewControllers];
     
@@ -80,15 +81,15 @@
     };
     
     
-    __weak typeof(HHMenuItem) *weakNature = nature;
-    nature.completionBlock = ^{
+    __weak typeof(HHMenuItem) *weakSettings = settings;
+    settings.completionBlock = ^{
         
-        _natureController.menuItem = weakNature;
-        self.viewControllers = @[_natureController];
+        _settingsViewContoller.menuItem = weakSettings;
+        self.viewControllers = @[_settingsViewContoller];
     };
     
     
-    NSArray *menuItems = @[home, culture, profile, nature];
+    NSArray *menuItems = @[home, culture, profile, settings];
     self.menu = [[HHMenu alloc] initWithMenuItems:menuItems forViewController:self];
     
 }
@@ -100,7 +101,7 @@
     _homeViewController    = [[HomeViewController alloc] init];
     _cultureController     = [[CultureViewController alloc] init];
     _profileViewController = [[ProfileViewController alloc] init];
-    _natureController      = [[NatureViewController alloc] init];
+    _settingsViewContoller = [[SettingsViewController alloc] init];
     
     
     [[(HHBaseViewController *)_homeViewController buttonHamburger] designateState:LBHamburgerButtonStateHamburger]; /**< 第一个控制器的其实状态值为 LBHamburgerButtonStateHamburger */
@@ -109,7 +110,7 @@
     
     [[(HHBaseViewController *)_profileViewController buttonHamburger] designateState:LBHamburgerButtonStateNotHamburger]; /**< 第三个控制器的其实状态值为 LBHamburgerButtonStateNotHamburger */
     
-    [[(HHBaseViewController *)_natureController buttonHamburger] designateState:LBHamburgerButtonStateNotHamburger]; /**< 第三个控制器的其实状态值为 LBHamburgerButtonStateNotHamburger */
+    [[(HHBaseViewController *)_settingsViewContoller buttonHamburger] designateState:LBHamburgerButtonStateNotHamburger]; /**< 第三个控制器的其实状态值为 LBHamburgerButtonStateNotHamburger */
     
 }
 
@@ -120,7 +121,7 @@
         导航控制器对菜单为强引用
         菜单对用来获取导航控制器中强属性（controllerArray）的属性（controllerArray）为弱引用
         */
-    _controllerArray = [NSMutableArray arrayWithArray:@[_homeViewController, _cultureController,_profileViewController, _natureController]];
+    _controllerArray = [NSMutableArray arrayWithArray:@[_homeViewController, _cultureController,_profileViewController, _settingsViewContoller]];
     self.menu.controllerArray = _controllerArray;
     
     /**< 显示菜单 */

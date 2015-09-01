@@ -11,6 +11,7 @@
 @class WeatherModel;
 
 typedef void(^RequestCompletion)();
+typedef void(^RequestCityListCompletion)(NSArray *cityList);
 
 /**
  *  天气数据管理类
@@ -22,8 +23,6 @@ typedef void(^RequestCompletion)();
 @property (copy, nonatomic) NSArray *cityList; /**< 城市列表 */
 
 @property (weak, nonatomic) RequestCompletion RequestCompletionBlock;
-
-@property (weak, nonatomic) UITableView *tableView;
 
 /**
  *  指定初始化
@@ -39,7 +38,7 @@ typedef void(^RequestCompletion)();
  *
  *  @return YES/NO
  */
-- (BOOL)addWeatherModelForCity:(NSString *)cityName;
+- (BOOL)addWeatherModelForCity:(NSString *)cityName withCompletionHandler:(RequestCompletion)requestCompletion;
 
 /**
  *  增加多项天气数据模型到天气数据字典
@@ -68,12 +67,16 @@ typedef void(^RequestCompletion)();
  *  请求到提供天气信息的城市列表
  *  写入 AvailableCities.plist 文件中
  */
-- (void)requestCityList;
+- (void)requestCityListWithCompletionHandler:(RequestCityListCompletion)requestCityListCompletion;
 
 /**
  *  加载 cityList.plist 文件
  *  获取 城市列表
  */
-- (void)loadCityListPlist;
+- (void)loadCityListPlistWithCompletionHandler:(RequestCityListCompletion)requestCityListCompletion;
 
+/**
+ *  直接从该项目的 初始化文件中的 cityList.plist 获取 城市列表
+ */
+- (void)loadCityListPlist;
 @end
